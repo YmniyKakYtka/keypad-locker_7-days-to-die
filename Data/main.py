@@ -3,7 +3,9 @@ import pyautogui as pag
 from keyboard import wait, write, send, is_pressed
 from sys import exit
 import csv
-from keypadButtonsSettings import startButton, stopButton
+
+startButton = "f"
+stopButton = "space"
 
 #Point(x=825, y=547)
 
@@ -17,7 +19,6 @@ with open('../passwords.csv', 'w', encoding='utf-8') as file:
     writer = csv.writer(file, delimiter=' ')
 
 print(f"Откройте окно с игрой, убрав окно консоли и нажмите {startButton} для того чтобы начать\nДля того чтобы завершить процесс преждевременно - зажмите {stopButton}")
-wait(startButton)
 
 pag.moveTo(x=825, y=547)
 

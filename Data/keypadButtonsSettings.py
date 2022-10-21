@@ -1,2 +1,0 @@
-startButton = 'f'
-stopButton = 'space'
