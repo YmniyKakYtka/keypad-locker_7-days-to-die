@@ -50,10 +50,10 @@ print(f"Откройте окно с игрой, убрав окно консо�
 wait(startButton)
 pag.moveTo(x=int(target[0])/2, y=int(target[1])/2)
 
-for length in range(1, rangeChoise + 1):
+for length in range(1, 7):
     while True:
         password = ''
-        for i in range(0, length):
+        for i in range(0, rangeChoise):
             password += choice(chars)
         if password not in wrongPasswords:
 
